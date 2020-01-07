@@ -10,8 +10,8 @@ public class PipeSpawner : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        GameObject newPipe = Instantiate(pipe);
-        newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
+        //GameObject newPipe = Instantiate(pipe);
+        //newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
     }
 
     public void Spawn ()
