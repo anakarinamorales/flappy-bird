@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlyComponent : MonoBehaviour {
     public float velocity = 1;
     private Rigidbody2D rigidBody;
+    public GameManager gameManager;
 
 	// Use this for initialization
 	void Start () {
@@ -19,4 +20,11 @@ public class FlyComponent : MonoBehaviour {
             rigidBody.velocity = Vector2.up * velocity;
         }
 	}
+
+    // this will be automatically called when the bird hit something
+    // triggering the game over method
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        gameManager.GameOver();
+    }
 }
