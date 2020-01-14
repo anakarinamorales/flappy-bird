@@ -7,8 +7,8 @@ public class FlyComponent : MonoBehaviour {
     private Rigidbody2D rigidBody;
     public GameManager gameManager;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         rigidBody = GetComponent<Rigidbody2D>();
 	}
 	
@@ -23,7 +23,7 @@ public class FlyComponent : MonoBehaviour {
 
     // this will be automatically called when the bird hit something
     // triggering the game over method
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         gameManager.GameOver();
     }
