@@ -61,12 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\IncreaseScore.cs" />
-    <Compile Include="Assets\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\FlyComponent.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\IncreaseScore.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\PipeSpawner.cs" />
+    <Compile Include="Assets\Scripts\ScoreCounter.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>E:/Projects/flappy-bird/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
